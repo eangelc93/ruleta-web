@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#153a83" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Ruleta · Hub Challenge</title>
+  <link rel="icon" href="./favicon.svg" />
+  <link rel="stylesheet" href="./css/ruleta.css" />
+</head>
+<body>
+  <div class="checker" aria-hidden="true"></div>
+  <main>
+    <div class="brand-bar">
+      <img src="./marca/logo-ccas.png" alt="Cámara de Comercio Aburrá Sur" />
+      <img src="./marca/logo-hub-innovacion.png" alt="Hub de Innovación Regional Antioquia" />
+    </div>
+    <div class="layout">
+      <section class="stage">
+        <div class="stage-card">
+          <svg class="pointer" viewBox="0 0 90 78" aria-hidden="true">
+            <path d="M45 70 L10 12 H80 Z" fill="#fffff2" stroke="#0f2c66" stroke-width="7" stroke-linejoin="round" />
+            <path d="M45 56 L30 26 H60 Z" fill="#14d4c0" stroke="#0f2c66" stroke-width="4" stroke-linejoin="round" />
+          </svg>
+          <div class="wheel-hit" id="wheel-hit">
+            <div id="rotator">
+              <svg id="wheel" viewBox="0 0 1000 1000" role="img"></svg>
+            </div>
+            <button type="button" id="hub">GIRAR</button>
+          </div>
+          <div class="feet" aria-hidden="true"><span></span><span></span></div>
+        </div>
+      </section>
+      <section class="pitch">
+        <p class="eyebrow" id="info-eyebrow">HUB CHALLENGE</p>
+        <div class="hero-title-wrap">
+          <h1><span id="info-title-1">GIRA</span><br /><span id="info-title-2">LA RULETA</span></h1>
+          <img class="deco-cursor" src="./cursor.svg" alt="" />
+        </div>
+        <p class="lede" id="info-lede">Una persona, un reto. La ruleta elige la línea del Hub.</p>
+        <div class="card">
+          <ol class="steps">
+            <li><b id="paso-1-titulo">01 / TOCA</b><span id="paso-1-texto">Cada toque sube 1 la velocidad.</span></li>
+            <li><b id="paso-2-titulo">02 / TU LÍNEA</b><span id="paso-2-texto">Mira dónde se detiene.</span></li>
+            <li><b id="paso-3-titulo">03 / EL RETO</b><span id="paso-3-texto">Ve a ese mini stand y haz la actividad.</span></li>
+          </ol>
+          <button type="button" class="btn is-idle" id="btn-spin">¡GIRAR!</button>
+          <p class="hint" id="status">Cada toque sube 1 la velocidad.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+  <nav class="ops">
+    <button type="button" id="btn-mute">Sonido: sí</button>
+    <button type="button" id="btn-full">Pantalla completa</button>
+  </nav>
+  <div id="result" class="result" hidden>
+    <div class="result-card" id="result-card" role="dialog" aria-modal="true" aria-labelledby="result-name">
+      <div id="result-badge" class="result-badge" aria-hidden="true"></div>
+      <p class="kicker" id="result-kicker">TU LÍNEA</p>
+      <h2 id="result-name"></h2>
+      <p id="result-detail" class="detail"></p>
+      <p class="go" id="result-go">Ve al mini stand y completa el reto.</p>
+      <button type="button" class="btn" id="btn-next">SIGUIENTE PERSONA</button>
+      <p class="countdown" id="countdown"></p>
+    </div>
+  </div>
+  <div id="confetti" hidden></div>
+  <script type="module" src="./js/ruleta.js"></script>
+</body>
+</html>

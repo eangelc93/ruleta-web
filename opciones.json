@@ -1,0 +1,59 @@
+{
+  "opciones": [
+    {
+      "nombre": "INNOVACIÓN",
+      "detalle": "Pensamiento lateral · reto con tarjetas",
+      "color": "menta",
+      "icono": "bombilla",
+      "peso": 1
+    },
+    {
+      "nombre": "ANALÍTICA DE DATOS",
+      "rueda": "ANALÍTICA",
+      "detalle": "Detective de datos · mini dashboard",
+      "color": "cielo",
+      "icono": "grafica",
+      "peso": 1
+    },
+    {
+      "nombre": "DESARROLLO DE SOFTWARE",
+      "rueda": "SOFTWARE",
+      "detalle": "Habla con el bot · PC y reto web",
+      "color": "azul",
+      "icono": "codigo",
+      "peso": 1
+    },
+    {
+      "nombre": "MARKETING DIGITAL",
+      "rueda": "MARKETING",
+      "detalle": "Diagnóstico express de redes",
+      "color": "menta",
+      "icono": "megafono",
+      "peso": 1
+    },
+    {
+      "nombre": "CREACIÓN DE CONTENIDO",
+      "rueda": "CONTENIDO",
+      "detalle": "Graba tu historia en 20 segundos",
+      "color": "crema",
+      "icono": "camara",
+      "peso": 1
+    }
+  ],
+  "informacion": {
+    "encabezado": "HUB CHALLENGE",
+    "titulo1": "GIRA",
+    "titulo2": "LA RULETA",
+    "frase": "Una persona, un reto. La ruleta elige la línea del Hub.",
+    "paso1Titulo": "01 / TOCA",
+    "paso1Texto": "Cada toque sube 1 la velocidad.",
+    "paso2Titulo": "02 / TU LÍNEA",
+    "paso2Texto": "Mira dónde se detiene.",
+    "paso3Titulo": "03 / EL RETO",
+    "paso3Texto": "Ve a ese mini stand y haz la actividad.",
+    "etiquetaResultado": "TU LÍNEA",
+    "mensajeResultado": "Ve al mini stand y completa el reto.",
+    "botonSiguiente": "SIGUIENTE PERSONA",
+    "segundos": 22
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    { "source": "/ruleta", "destination": "/index.html" },
+    { "source": "/ruleta/", "destination": "/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/opciones.json",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store" }
+      ]
+    }
+  ]
+}
